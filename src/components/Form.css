@@ -1,0 +1,112 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Assistant;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.underscore{
+  display: flex;
+  width: 10vw;
+  height: 1vh;
+  margin: auto;
+  background-image: linear-gradient(91deg, #f2c94c 15%, #f2994a 113%);
+  margin-bottom: 5em;
+}
+
+.form-layout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-layout{
+  font-family: Assistant;
+  font-size: 18px;
+  width: 25vw;
+  direction: rtl;
+  text-align: initial;
+}
+
+.right-layout div, .join{
+  padding: 2%;
+}
+
+.left-layout{
+  width: 16vw;
+}
+
+.join {
+  color: #c80707;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.form-control {
+  font-family: Assistant;
+  color: #7a7a7a;
+  border: solid 1px #fcba38;
+}
+
+.info{
+  font-weight: bold;
+}
+
+.btn-send {
+  background-color: #f4462b;
+  color: white;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.join-mobile{
+  display: none;
+}
+
+.msg{
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-layout{
+    flex-direction: column;
+  }
+
+  .join:first-of-type{
+    display: none;
+  }
+
+  .right-layout, .left-layout{
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .underscore{
+    margin-bottom: 1em;
+  }
+
+  .main{
+    padding: 0 5%;
+  }
+
+  .join-mobile{
+    display: block !important;
+    font-size: 16px;
+    margin-top: 2em;
+  }
+}

@@ -1,0 +1,89 @@
+.navbar1 {
+  display: flex;
+  margin: 0 0 1%;
+  justify-content: center;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 0%;
+}
+
+.nav-link{
+  list-style: none;
+  padding: 1em;
+  font-family: Assistant;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #7a7a7a;
+}
+
+.nav-link:last-of-type{
+  width: 10vw;
+}
+
+
+.nav-link:hover{
+  cursor: pointer;
+}
+
+.logo {
+  width: 147px;
+  height: 42px; 
+  margin-left: 2%;
+}
+
+.glass-mobile{
+  display: none;
+}
+
+.glass{
+  width: 14px;
+  height: 15px;
+  margin-left: 3%;
+}
+
+
+.breadcrumbs{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  margin: 0 0 0 8px;
+  font-family: Assistant;
+  color: #000000;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.breadcrumbs li {
+  grid-column-start: 3;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  padding: 0.3em;
+}
+
+.hanburger{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .hanburger, .glass-mobile{
+    display: block;
+  }
+
+  .nav-link, .breadcrumbs{
+    display: none;
+  }
+
+  .navbar1{
+    display: flex;
+    justify-content: space-around;
+  }
+}
