@@ -88,7 +88,7 @@ class Form extends Component {
                 <input 
                   className="phone form-control" 
                   name="phone" 
-                  type="number" 
+                  type="tel" 
                   placeholder="טלפון"
                   onChange={(e) => this.setState({[e.target.name]: e.target.value })}
                   required 
